@@ -1,0 +1,57 @@
+# =============================================================================
+# Python Requirements for Development
+# =============================================================================
+# Install with: pip install -r requirements-dev.txt
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Core SDKs
+# -----------------------------------------------------------------------------
+agent-framework>=1.0.0b1  # Microsoft Agent Framework (preview)
+azure-ai-projects>=1.0.0b1  # Azure AI Foundry SDK
+azure-identity>=1.15.0
+openai>=1.30.0
+
+# GitHub Copilot SDK (requires Copilot CLI installed)
+github-copilot-sdk>=0.1.0
+
+# -----------------------------------------------------------------------------
+# Azure SDKs
+# -----------------------------------------------------------------------------
+azure-search-documents>=11.4.0
+azure-keyvault-secrets>=4.7.0
+azure-monitor-opentelemetry>=1.0.0
+
+# -----------------------------------------------------------------------------
+# Observability (Agent 365 Observability SDK)
+# -----------------------------------------------------------------------------
+microsoft-agents-a365-observability-core  # Core observability
+microsoft-agents-a365-runtime  # Runtime support
+microsoft-agents-a365-observability-extensions-agent-framework  # Agent Framework auto-instrumentation
+microsoft-agents-a365-observability-extensions-semantic-kernel  # Semantic Kernel auto-instrumentation
+microsoft-agents-a365-observability-extensions-openai  # OpenAI auto-instrumentation
+microsoft-agents-a365-observability-extensions-langchain  # LangChain auto-instrumentation
+
+# OpenTelemetry
+opentelemetry-api>=1.20.0
+opentelemetry-sdk>=1.20.0
+opentelemetry-exporter-otlp>=1.20.0
+structlog>=23.1.0
+
+# -----------------------------------------------------------------------------
+# Development Tools
+# -----------------------------------------------------------------------------
+ruff>=0.1.0
+mypy>=1.5.0
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pre-commit>=3.4.0
+
+# -----------------------------------------------------------------------------
+# Utilities
+# -----------------------------------------------------------------------------
+python-dotenv>=1.0.0
+httpx>=0.25.0
+pydantic>=2.0.0
+tenacity>=8.2.0

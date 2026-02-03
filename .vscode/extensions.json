@@ -1,0 +1,65 @@
+{
+  "recommendations": [
+    // 🎨 Theme & Appearance
+    "github.github-vscode-theme",
+    "pkief.material-icon-theme",
+    "miguelsolorio.fluent-icons",
+
+    // 🤖 AI & Copilot
+    "github.copilot",
+    "github.copilot-chat",
+
+    // ☁️ Azure Development
+    "ms-azuretools.vscode-bicep",
+    "ms-azuretools.vscode-azurefunctions",
+    "ms-azuretools.vscode-azureresourcegroups",
+    "ms-azuretools.azure-dev",
+    "ms-vscode.azure-account",
+    "ms-azuretools.vscode-docker",
+    "ms-azuretools.vscode-azure-github-copilot",
+
+    // 🐍 Python Development
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter",
+    "ms-python.isort",
+    "ms-python.debugpy",
+
+    // 💜 .NET / C# Development
+    "ms-dotnettools.csharp",
+    "ms-dotnettools.csdevkit",
+    "ms-dotnettools.vscode-dotnet-runtime",
+
+    // 📓 Jupyter & Data Science
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-keymap",
+    "ms-toolsai.jupyter-renderers",
+
+    // 🔧 DevOps & Git
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    "github.vscode-github-actions",
+
+    // 📝 Editing & Productivity
+    "esbenp.prettier-vscode",
+    "redhat.vscode-yaml",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-mermaid",
+    "streetsidesoftware.code-spell-checker",
+    "editorconfig.editorconfig",
+    "usernamehw.errorlens",
+    "christian-kohler.path-intellisense",
+
+    // 🔍 Code Quality
+    "sonarsource.sonarlint-vscode",
+
+    // 📊 API & REST
+    "humao.rest-client",
+    "42crunch.vscode-openapi",
+
+    // 🎯 Task Management
+    "wayou.vscode-todo-highlight",
+    "gruntfuggly.todo-tree"
+  ],
+  "unwantedRecommendations": []
+}

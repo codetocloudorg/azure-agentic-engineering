@@ -1,0 +1,159 @@
+# Azure AI Best Practices Repository
+# Maintained by Code to Cloud Team
+
+# ===================
+# Secrets & Credentials
+# ===================
+*.env
+.env*
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+secrets/
+credentials/
+.secrets/
+*.secret
+*.secrets.json
+appsettings.*.json
+!appsettings.json
+local.settings.json
+
+# Azure Specific
+.azure/
+azureauth.json
+servicePrincipal.json
+*.publishsettings
+
+# ===================
+# Python
+# ===================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+.conda/
+
+# ===================
+# Node.js
+# ===================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+package-lock.json
+yarn.lock
+
+# ===================
+# .NET
+# ===================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.nupkg
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
+# ===================
+# IDE & Editors
+# ===================
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===================
+# Terraform
+# ===================
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# ===================
+# Bicep
+# ===================
+*.parameters.local.json
+
+# ===================
+# Logs & Temp Files
+# ===================
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ===================
+# Test & Coverage
+# ===================
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+
+# ===================
+# Documentation Build
+# ===================
+_build/
+site/
+.mkdocs/
+
+# ===================
+# Jupyter Notebooks
+# ===================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===================
+# Data Files (prevent accidental commits)
+# ===================
+*.csv
+*.xlsx
+*.xls
+*.parquet
+!examples/**/*.csv
+data/
+datasets/

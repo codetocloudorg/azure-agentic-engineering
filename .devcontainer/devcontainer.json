@@ -1,0 +1,112 @@
+{
+  "name": "Azure Agentic Engineering",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+
+  // VS Code customizations
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // Theme & Appearance
+        "workbench.colorTheme": "GitHub Dark Default",
+        "workbench.iconTheme": "material-icon-theme",
+        "workbench.productIconTheme": "fluent-icons",
+        "editor.fontFamily": "'Cascadia Code', 'Fira Code', 'JetBrains Mono', Consolas, monospace",
+        "editor.fontLigatures": true,
+        "editor.fontSize": 14,
+        "editor.lineHeight": 1.6,
+        "terminal.integrated.fontFamily": "'Cascadia Code', 'Fira Code', monospace",
+        "terminal.integrated.fontSize": 13,
+        
+        // Editor
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": "active",
+        "editor.formatOnSave": true,
+        "editor.minimap.enabled": true,
+        "editor.smoothScrolling": true,
+        "editor.cursorBlinking": "smooth",
+        "editor.stickyScroll.enabled": true,
+        
+        // Files
+        "files.autoSave": "afterDelay",
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        
+        // Python
+        "python.analysis.typeCheckingMode": "basic",
+        "[python]": {
+          "editor.defaultFormatter": "ms-python.black-formatter",
+          "editor.formatOnSave": true
+        },
+        
+        // Git
+        "git.autofetch": true,
+        "git.enableSmartCommit": true,
+        
+        // GitHub Copilot
+        "github.copilot.enable": {
+          "*": true,
+          "markdown": true,
+          "yaml": true
+        }
+      },
+      
+      // Extensions
+      "extensions": [
+        // Theme
+        "GitHub.github-vscode-theme",
+        "PKief.material-icon-theme",
+        
+        // AI & Copilot
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        
+        // Azure
+        "ms-azuretools.vscode-bicep",
+        "ms-azuretools.azure-dev",
+        "ms-vscode.azure-account",
+        "ms-azuretools.vscode-azure-github-copilot",
+        
+        // Python
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.black-formatter",
+        
+        // DevOps & Git
+        "eamodio.gitlens",
+        "GitHub.vscode-pull-request-github",
+        "github.vscode-github-actions",
+        
+        // Editing
+        "esbenp.prettier-vscode",
+        "redhat.vscode-yaml",
+        "yzhang.markdown-all-in-one",
+        "usernamehw.errorlens"
+      ]
+    }
+  },
+
+  // Ports
+  "forwardPorts": [5000, 7071, 8000, 8080],
+  "portsAttributes": {
+    "5000": { "label": "Python App" },
+    "7071": { "label": "Azure Functions" },
+    "8000": { "label": "FastAPI" },
+    "8080": { "label": "Web Server" }
+  },
+
+  // Post-create command to show MOTD
+  "postCreateCommand": "echo '' && ~/.local/bin/motd.sh 2>/dev/null || true",
+  
+  // Run as non-root
+  "remoteUser": "vscode",
+  
+  // Host requirements (lean)
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb",
+    "storage": "16gb"
+  }
+}

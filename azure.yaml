@@ -1,0 +1,36 @@
+name: azure-agentic-engineering
+metadata:
+  template: Code to Cloud - Azure AI Best Practices
+  author: Code to Cloud (https://github.com/codetocloudorg)
+
+# =============================================================================
+# Azure Developer CLI Configuration
+# =============================================================================
+# This file configures azd for deploying Azure AI infrastructure and applications.
+# 
+# Usage:
+#   azd init      - Initialize the project
+#   azd provision - Deploy infrastructure only
+#   azd deploy    - Deploy applications only
+#   azd up        - Deploy everything
+#   azd down      - Clean up resources
+# =============================================================================
+
+infra:
+  provider: bicep
+  path: ./infra/bicep
+  module: main
+
+# Hooks for custom scripts
+hooks:
+  preprovision:
+    shell: sh
+    run: |
+      echo "Preparing Azure deployment..."
+      az account show || { echo "Please run 'az login' first"; exit 1; }
+      
+  postprovision:
+    shell: sh
+    run: |
+      echo "Deployment complete!"
+      echo "OpenAI Endpoint: $(azd env get-values | grep AZURE_OPENAI_ENDPOINT)"
