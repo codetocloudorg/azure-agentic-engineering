@@ -19,7 +19,7 @@
         "editor.lineHeight": 1.6,
         "terminal.integrated.fontFamily": "'Cascadia Code', 'Fira Code', monospace",
         "terminal.integrated.fontSize": 13,
-        
+
         // Editor
         "editor.bracketPairColorization.enabled": true,
         "editor.guides.bracketPairs": "active",
@@ -28,23 +28,23 @@
         "editor.smoothScrolling": true,
         "editor.cursorBlinking": "smooth",
         "editor.stickyScroll.enabled": true,
-        
+
         // Files
         "files.autoSave": "afterDelay",
         "files.trimTrailingWhitespace": true,
         "files.insertFinalNewline": true,
-        
+
         // Python
         "python.analysis.typeCheckingMode": "basic",
         "[python]": {
           "editor.defaultFormatter": "ms-python.black-formatter",
           "editor.formatOnSave": true
         },
-        
+
         // Git
         "git.autofetch": true,
         "git.enableSmartCommit": true,
-        
+
         // GitHub Copilot
         "github.copilot.enable": {
           "*": true,
@@ -52,33 +52,33 @@
           "yaml": true
         }
       },
-      
+
       // Extensions
       "extensions": [
         // Theme
         "GitHub.github-vscode-theme",
         "PKief.material-icon-theme",
-        
+
         // AI & Copilot
         "GitHub.copilot",
         "GitHub.copilot-chat",
-        
+
         // Azure
         "ms-azuretools.vscode-bicep",
         "ms-azuretools.azure-dev",
         "ms-vscode.azure-account",
         "ms-azuretools.vscode-azure-github-copilot",
-        
+
         // Python
         "ms-python.python",
         "ms-python.vscode-pylance",
         "ms-python.black-formatter",
-        
+
         // DevOps & Git
         "eamodio.gitlens",
         "GitHub.vscode-pull-request-github",
         "github.vscode-github-actions",
-        
+
         // Editing
         "esbenp.prettier-vscode",
         "redhat.vscode-yaml",
@@ -99,10 +99,10 @@
 
   // Post-create command to show MOTD
   "postCreateCommand": "echo '' && ~/.local/bin/motd.sh 2>/dev/null || true",
-  
+
   // Run as non-root
   "remoteUser": "vscode",
-  
+
   // Host requirements (lean)
   "hostRequirements": {
     "cpus": 2,

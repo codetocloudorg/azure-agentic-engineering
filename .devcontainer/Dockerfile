@@ -1,7 +1,7 @@
 # =============================================================================
 # Azure Agentic Engineering - Ultra-Lean Secure Container
 # Code to Cloud | github.com/codetocloudorg
-# 
+#
 # Base: Ubuntu 24.04 LTS (Canonical Official)
 # Security: Minimal attack surface, reputable vendor
 # =============================================================================
